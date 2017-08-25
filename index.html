@@ -205,6 +205,9 @@
 								</p>
 							</header>
 							<form action="https://formspree.io/vanpellecomkimmie@gmail.com" method="post">
+							<input type="text" name="_gotcha" style="display:none" />
+							<input type="hidden" name="_subject" value="New order!" />
+							<input type="text" name="_replyto" placeholder="Your email" />
 								<div>
 									<div class="row">
 										<div class="6u 12u$(mobile)">
@@ -256,17 +259,17 @@
 											<input type="number" name="quantity" min="1" max="5">
 										</div>
 									<!-- Bijkomende keuze na categorie keuzen -->
-										<div class="4u 12u$(mobile)" id="yum1">
+										<div class="4u 12u$(mobile)" id="yum1" name="yum1">
 										    <select>
-										    	<option value="darkheart" name="Dark chocolate hearts">Dark chocolate hearts</option>
-										    	<option value="whiteheart" name="White chocolate hearts">White chocolate hearts</option>
+										    	<option name="Dark chocolate hearts">Dark chocolate hearts</option>
+										    	<option name="White chocolate hearts">White chocolate hearts</option>
 										    </select>
 										    
 										</div>
 										<div class="6u 12u$(mobile)" id="yum2">
 										    <select>
-										    	<option value="framboos">Frambozenmoppen (250gram)</option>
-										    	<option value="kaneel">Kaneelmoppen</option>
+										    	<option name="framboos">Frambozenmoppen (250gram)</option>
+										    	<option name="kaneel">Kaneelmoppen</option>
 										    </select>
 										</div>
 										<div class="6u 12u$(mobile)" id="yum3">
