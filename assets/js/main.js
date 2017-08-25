@@ -4,6 +4,53 @@
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 */
 
+
+// order form categories
+$(document).ready(function () {
+    toggleFields(); // call this first so we start out with the correct visibility depending on the selected form values
+    // this will call our toggleFields function every time the selection value of our other field changes
+    $("#products").change(function () {
+        toggleFields();
+    });
+	
+	$("#levering").change(function () {
+        toggleFields();
+    });
+});
+// this toggles the visibility of other server
+function toggleFields() {
+    if ($("#products").val() === "yum1")
+        $("#yum1").show();
+    else
+        $("#yum1").hide();
+
+    if ($("#products").val() === "yum2")
+        $("#yum2").show();
+    else
+        $("#yum2").hide();
+
+    if ($("#products").val() === "yum3")
+        $("#yum3").show();
+    else
+        $("#yum3").hide();
+
+    if ($("#products").val() === "yum4")
+        $("#yum4").show();
+    else
+        $("#yum4").hide();
+
+
+    if ($("#levering").val() === "pickup")
+        $("#home").show();
+    else
+        $("#home").hide();
+
+    if ($("#levering").val() === "delivery")
+        $("#outside").show();
+    else
+        $("#outside").hide();
+}
+
 (function($) {
 
 	var settings = {
