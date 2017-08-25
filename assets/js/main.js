@@ -13,18 +13,18 @@ $(document).ready(function () {
         toggleFields();
     });
 	
-	$("#levering").change(function () {
+	$("#delivery").change(function () {
         toggleFields();
     });
 });
 // this toggles the visibility of other server
 function toggleFields() {
-    if ($("#products").val() === "yum1")
+    if ($("#products").val() === "pralines")
         $("#yum1").show();
     else
         $("#yum1").hide();
 
-    if ($("#products").val() === "yum2")
+    if ($("#products").val() === "cookies")
         $("#yum2").show();
     else
         $("#yum2").hide();
@@ -40,15 +40,15 @@ function toggleFields() {
         $("#yum4").hide();
 
 
-    if ($("#levering").val() === "pickup")
+    if ($("#delivery").val() === "pickup")
         $("#home").show();
     else
         $("#home").hide();
 
-    if ($("#levering").val() === "delivery")
-        $("#outside").show();
+    if ($("#delivery").val() === "delivery")
+        $("#adress").show();
     else
-        $("#outside").hide();
+        $("#adress").hide();
 }
 
 (function($) {

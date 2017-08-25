@@ -208,31 +208,31 @@
 								<div>
 									<div class="row">
 										<div class="6u 12u$(mobile)">
-											<input type="text" name="firstname" placeholder="Full name" />
+											<input type="text" name="First name" placeholder="First name" />
 										</div>
 										<div class="6u 12u$(mobile)">
-											<input type="text" name="lastname" placeholder="Last name" />
+											<input type="text" name="Last name" placeholder="Last name" />
 										</div>
 										<div class="6u 12u$(mobile)">
-											<input type="text" name="email" placeholder="Email" />
+											<input type="email" name="Email" placeholder="Email" />
 										</div>
 										<div class="6u$ 12u$(mobile)">
-											<input type="text" name="number" placeholder="Phone number" />
+											<input type="text" name="Phone Number" placeholder="Phone number (optional)" />
 										</div>
 
 									<!-- levering kiezen -->
 										<div class="6u 12u$(mobile)">
-											<select id="levering" name="levering">
+											<select id="delivery" name="Delivery">
 												<option>Choose your way of delivery</option>
-											    <option value="pickup">Pick-up</option>
-											    <option value="delivery">Delivery at adress</option>
+											    <option value="pickup" name="Pick-up">Pick-up</option>
+											    <option value="delivery" name="Home delivery">Delivery at adress</option>
 											</select>
 										</div>
 
-										<div class="6u$ 12u$(mobile)" id="outside">
-										    <input type="text" name="text" placeholder="Streetname and number" />
-										    <input type="text" name="number" placeholder="Postcode" />
-										    <input type="text" name="number" placeholder="Doorcode if necessary" />
+										<div class="6u$ 12u$(mobile)" id="adress">
+										    <input type="text" name="Streetname" placeholder="Streetname and number" />
+										    <input type="text" name="Postcode" placeholder="Postcode" />
+										    <input type="text" name="Doorcode" placeholder="Doorcode (optional)" />
 										</div>
 									</div>
 										<hr />
@@ -240,24 +240,28 @@
 										<br>
 									<div class="row">
 									<!-- yumyums kiezen -->
-										<div class="6u 12u$(mobile)">
+										<div class="3u 12u$(mobile)">
 											<select id="products" name="products">
 												<option>Choose your yumyums</option>
-											    <option value="yum1">Pralines</option>
-											    <option value="yum2">Cookies</option>
-											    <option value="yum3">Marshmallows</option>
+											    <option value="pralines">Pralines</option>
+											    <option value="cookies">Cookies</option>
+											    <option value="marshmallows">Marshmallows</option>
 											    <option value="yum4">Cakes</option>
 											    <option value="yum5">Macarons</option>
 											    <option value="yum6">Donuts</option>
 											    <option value="yum7">Bread</option>
 											</select>
 										</div>
+										<div class="3u 12u$(mobile)">
+											<input type="number" name="quantity" min="1" max="5">
+										</div>
 									<!-- Bijkomende keuze na categorie keuzen -->
-										<div class="6u 12u$(mobile)" id="yum1">
+										<div class="4u 12u$(mobile)" id="yum1">
 										    <select>
-										    	<option value="darkheart">Dark chocolate hearts</option>
-										    	<option value="whiteheart">White chocolate hearts</option>
+										    	<option value="darkheart" name="Dark chocolate hearts">Dark chocolate hearts</option>
+										    	<option value="whiteheart" name="White chocolate hearts">White chocolate hearts</option>
 										    </select>
+										    
 										</div>
 										<div class="6u 12u$(mobile)" id="yum2">
 										    <select>
@@ -278,8 +282,6 @@
 										    	<option value="mirrorglaze">Mirror glaze cake</option>
 										    </select>
 										</div>
-									</div>
-									<div class="row">
 										<div class="12u$">
 											<input type="submit" value="Submit order" />
 										</div>
