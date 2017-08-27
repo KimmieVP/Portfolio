@@ -21,7 +21,7 @@ function toggleFields() {
     else
         $("#yum1").hide();
 
-    if ($("#product").val() === "yum2")
+    if ($("#product").val() === "cookies")
         $("#yum2").show();
     else
         $("#yum2").hide();
