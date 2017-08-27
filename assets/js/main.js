@@ -19,12 +19,12 @@ $(document).ready(function () {
 });
 // this toggles the visibility of other server
 function toggleFields() {
-    if ($("#products").val() === "pralines")
+    if ($("#products").val() === "yum1")
         $("#yum1").show();
     else
         $("#yum1").hide();
 
-    if ($("#products").val() === "cookies")
+    if ($("#products").val() === "yum2")
         $("#yum2").show();
     else
         $("#yum2").hide();
