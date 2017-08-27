@@ -9,29 +9,29 @@
 $(document).ready(function () {
     toggleFields(); // call this first so we start out with the correct visibility depending on the selected form values
     // this will call our toggleFields function every time the selection value of our other field changes
-    $("#products").change(function () {
+    $("#product").change(function () {
         toggleFields();
     });
 	
 });
 // this toggles the visibility of other server
 function toggleFields() {
-    if ($("#products").val() === "pralines")
+    if ($("#product").val() === "pralines")
         $("#yum1").show();
     else
         $("#yum1").hide();
 
-    if ($("#products").val() === "yum2")
+    if ($("#product").val() === "yum2")
         $("#yum2").show();
     else
         $("#yum2").hide();
 
-    if ($("#products").val() === "yum3")
+    if ($("#product").val() === "yum3")
         $("#yum3").show();
     else
         $("#yum3").hide();
 
-    if ($("#products").val() === "yum4")
+    if ($("#product").val() === "yum4")
         $("#yum4").show();
     else
         $("#yum4").hide();
