@@ -209,10 +209,11 @@
 							<input type="hidden" name="_subject" value="New order!" />
 								<div>
 									<div class="row">
+									<!-- customer info -->
 										<div class="6u 12u$(mobile)">
 											<input type="text" name="First name" placeholder="First name" />
 										</div>
-										<div class="6u 12u$(mobile)">
+										<div class="6u$ 12u$(mobile)">
 											<input type="text" name="Last name" placeholder="Last name" />
 										</div>
 										<div class="6u 12u$(mobile)">
@@ -221,72 +222,71 @@
 										<div class="6u$ 12u$(mobile)">
 											<input type="text" name="Phone Number" placeholder="Phone number (optional)" />
 										</div>
-
-									<!-- levering kiezen -->
+									</div>
+									<hr />
+									<!-- delivery -->
+									<h3>Delivery to :</h3>
+									<div class="row">
 										<div class="6u 12u$(mobile)">
-											<select id="delivery" name="Delivery">
-												<option>Choose your way of delivery</option>
-											    <option value="pickup" name="Pick-up">Pick-up</option>
-											    <option value="delivery" name="Home delivery">Delivery at adress</option>
-											</select>
+											<input type="text" name="Address1" placeholder="Address line 1" />
 										</div>
-
-										<div class="6u$ 12u$(mobile)" id="adress">
-										    <input type="text" name="Streetname" placeholder="Streetname and number" />
-										    <input type="text" name="Postcode" placeholder="Postcode" />
-										    <input type="text" name="Doorcode" placeholder="Doorcode (optional)" />
+										<div class="6u$ 12u$(mobile)">
+										    <input type="text" name="Address2" placeholder="Address line 2" />
+										</div>
+										<div class="6u 12u$(mobile)">
+										    <input type="text" name="City" placeholder="City" />
+										</div>
+										<div class="6u 12u$(mobile)">
+										    <input type="text" name="Postal/Zip code" placeholder="Postal/Zip code" />
 										</div>
 									</div>
-										<hr />
-										<h3>Yumyums</h3>
-										<br>
-									<div class="row">
+									<hr />
 									<!-- yumyums kiezen -->
-										<div class="4u 12u$(mobile)">
-											<select id="products" name="products">
-												<option>Choose your yumyums</option>
-											    <option value="pralines">Pralines</option>
-											    <option value="cookies">Cookies</option>
-											    <option value="marshmallows">Marshmallows</option>
-											    <option value="cakes">Cakes</option>
-											    <option value="macarons">Macarons</option>
-											    <option value="yum6">Donuts</option>
-											    <option value="yum7">Bread</option>
-											</select>
-										</div>
-										<div class="3u 12u$(mobile)">
-											<input type="number" name="quantity" min="1" max="5">
-										</div>
+									<h3>Yumyums</h3>	
+									<div class="row">
+
+											<div class="4u 12u$(mobile)">
+												<select id="products" name="products">
+													<option>Choose your yumyums</option>
+												    <option value="pralines">Pralines</option>
+												    <option value="cookies">Cookies</option>
+												    <option value="marshmallows">Marshmallows</option>
+												    <option value="cakes">Cakes</option>
+												    <option value="macarons">Macarons</option>
+												    <option value="yum6">Donuts</option>
+												    <option value="yum7">Bread</option>
+												</select>
+											</div>
 									<!-- Bijkomende keuze na categorie keuzen -->
-										<div class="4u 12u$(mobile)" id="yum1" name="yum1">
-										    <select>
-										    	<option name="Dark chocolate hearts">Dark chocolate hearts</option>
-										    	<option name="White chocolate hearts">White chocolate hearts</option>
-										    </select>
-										    
-										</div>
-										<div class="6u 12u$(mobile)" id="yum2">
-										    <select>
-										    	<option name="framboos">Frambozenmoppen (250gram)</option>
-										    	<option name="kaneel">Kaneelmoppen</option>
-										    </select>
-										</div>
-										<div class="6u 12u$(mobile)" id="yum3">
-										    <select>
-										    	<option value="raspberry">Raspberry marshmallows</option>
-										    </select>
-										</div>
-										<div class="6u 12u$(mobile)" id="yum4">
-										    <select>
-										    	<option value="doublecake">Double mousse cake</option>
-										    	<option value="raspberrycake">Raspberry mousse cake</option>
-										    	<option value="princess">Princess cake</option>
-										    	<option value="mirrorglaze">Mirror glaze cake</option>
-										    </select>
-										</div>
-										<div class="12u$">
-											<input type="submit" value="Submit order" />
-										</div>
+											<div class="4u 12u$(mobile)" id="yum1" name="yum1">
+											    <select>
+											    	<option value="Dark chocolate hearts">Dark chocolate hearts</option>
+											    	<option value="White chocolate hearts">White chocolate hearts</option>
+											    </select>
+											    
+											</div>
+											<div class="6u 12u$(mobile)" id="yum2">
+											    <select>
+											    	<option name="framboos">Frambozenmoppen (250gram)</option>
+											    	<option name="kaneel">Kaneelmoppen</option>
+											    </select>
+											</div>
+											<div class="6u 12u$(mobile)" id="yum3">
+											    <select>
+											    	<option value="raspberry">Raspberry marshmallows</option>
+											    </select>
+											</div>
+											<div class="6u 12u$(mobile)" id="yum4">
+											    <select>
+											    	<option value="doublecake">Double mousse cake</option>
+											    	<option value="raspberrycake">Raspberry mousse cake</option>
+											    	<option value="princess">Princess cake</option>
+											    	<option value="mirrorglaze">Mirror glaze cake</option>
+											    </select>
+											</div>
+											<div class="12u$">
+												<input type="submit" value="Submit order" />
+											</div>
 									</div>
 								</div>
 							</form>
