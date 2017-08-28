@@ -5,38 +5,6 @@
 */
 
 
-// order form categories
-$(document).ready(function () {
-    toggleFields(); // call this first so we start out with the correct visibility depending on the selected form values
-    // this will call our toggleFields function every time the selection value of our other field changes
-    $("#product").change(function () {
-        toggleFields();
-    });
-	
-});
-// this toggles the visibility of other server
-function toggleFields() {
-    if ($("#product").val() === "pralines")
-        $("#yum1").show();
-    else
-        $("#yum1").hide();
-
-    if ($("#product").val() === "cookies")
-        $("#yum2").show();
-    else
-        $("#yum2").hide();
-
-    if ($("#product").val() === "yum3")
-        $("#yum3").show();
-    else
-        $("#yum3").hide();
-
-    if ($("#product").val() === "yum4")
-        $("#yum4").show();
-    else
-        $("#yum4").hide();
-}
-
 (function($) {
 
 	var settings = {
@@ -47,7 +15,7 @@ function toggleFields() {
 		// Speed to fade in/out.
 			fadeSpeed: 300,
 
-		// Size factor.
+		// Size factor. 11.5
 			sizeFactor: 11.5,
 
 		// Minimum point size.
